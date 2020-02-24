@@ -1,7 +1,7 @@
 # Library for Competitive Programming
 
-[![Actions Status](https://github.com/knuu/contest_library/workflows/verify/badge.svg)](https://github.com/knuu/contest_library/actions)
-[![GitHub Pages](https://img.shields.io/static/v1?label=GitHub+Pages&message=+&color=brightgreen&logo=github)](https://knuu.github.io/contest_library/)
+[![Actions Status](https://github.com/knuu/test_for_python_contest_library/workflows/verify/badge.svg)](https://github.com/knuu/test_for_python_contest_library/actions)
+[![GitHub Pages](https://img.shields.io/static/v1?label=GitHub+Pages&message=+&color=brightgreen&logo=github)](https://knuu.github.io/test_for_python_contest_library/)
 
 Library for Competitive Programming for C++, Python, Nim-lang
 
