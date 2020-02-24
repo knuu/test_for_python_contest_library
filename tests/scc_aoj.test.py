@@ -1,8 +1,5 @@
 # verify-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_3_C
-# @import python_library/graph/scc.py
 import sys
-
-sys.path.insert(0, ".")
 input = sys.stdin.buffer.readline
 sys.setrecursionlimit(6 * 10 ** 5)
 

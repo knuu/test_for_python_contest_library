@@ -1,9 +1,6 @@
 # verify-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_5_A
-# @import python_library/graph/graph.py
-# @import python_library/graph/tree_diameter.py
 import sys
-
-sys.path.insert(0, ".")
+input = sys.stdin.buffer.readline
 
 from python_library.graph.graph import Graph
 from python_library.graph.tree_diameter import TreeDiameter

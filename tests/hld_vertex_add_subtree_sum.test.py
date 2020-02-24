@@ -1,11 +1,6 @@
 # verify-helper: PROBLEM https://judge.yosupo.jp/problem/vertex_add_subtree_sum
-# @import python_library/data_structures/segment_tree.py
-# @import python_library/graph/graph.py
-# @import python_library/graph/heavy_light_decomposition.py
 import operator
 import sys
-
-sys.path.insert(0, ".")
 input = sys.stdin.buffer.readline
 
 from python_library.data_structures.segment_tree import SegmentTree

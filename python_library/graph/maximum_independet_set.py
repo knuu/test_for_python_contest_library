@@ -1,4 +1,3 @@
-# @import python_library/misc/popcount.py
 from python_library.misc.popcount import popcount
 
 

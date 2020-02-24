@@ -1,8 +1,5 @@
 # verify-helper: PROBLEM https://judge.yosupo.jp/problem/unionfind
-# @import python_library/data_structures/unionfind.py
 import sys
-
-sys.path.insert(0, ".")
 input = sys.stdin.buffer.readline
 
 from python_library.data_structures.unionfind import UnionFindTree

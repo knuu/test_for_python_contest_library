@@ -1,4 +1,3 @@
-# @import python_library/geometry/geometry.py
 from python_library.geometry.geometry import Point
 
 
