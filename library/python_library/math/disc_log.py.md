@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#fcc812ea527936762e2a2536e11e6960">python_library/math</a>
 * <a href="{{ site.github.repository_url }}/blob/master/python_library/math/disc_log.py">View this file on GitHub</a>
-    - Last commit date: 2020-02-24 14:44:54+00:00
+    - Last commit date: 2020-02-24 15:17:08+00:00
 
 
 

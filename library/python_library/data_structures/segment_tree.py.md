@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#4f7277da04114aac533381a4614f94a3">python_library/data_structures</a>
 * <a href="{{ site.github.repository_url }}/blob/master/python_library/data_structures/segment_tree.py">View this file on GitHub</a>
-    - Last commit date: 2020-02-24 14:44:54+00:00
+    - Last commit date: 2020-02-24 15:17:08+00:00
 
 
 

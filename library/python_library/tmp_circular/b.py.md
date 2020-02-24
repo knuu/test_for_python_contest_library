@@ -25,21 +25,15 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: python_library/graph/scc.py
+# :warning: python_library/tmp_circular/b.py
 
 <a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../../index.html#7e80885bc8a78dc63feed9f40126ba0e">python_library/graph</a>
-* <a href="{{ site.github.repository_url }}/blob/master/python_library/graph/scc.py">View this file on GitHub</a>
+* category: <a href="../../../index.html#33fe61f9041d1baeab69fa11a5d6c7d3">python_library/tmp_circular</a>
+* <a href="{{ site.github.repository_url }}/blob/master/python_library/tmp_circular/b.py">View this file on GitHub</a>
     - Last commit date: 2020-02-24 15:17:08+00:00
 
 
-
-
-## Verified with
-
-* :heavy_check_mark: <a href="../../../verify/tests/scc_aoj.test.py.html">tests/scc_aoj.test.py</a>
-* :heavy_check_mark: <a href="../../../verify/tests/scc_yosupo.test.py.html">tests/scc_yosupo.test.py</a>
 
 
 ## Code
@@ -47,47 +41,10 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-class StronglyConnectedComponets:
-    def __init__(self, n: int) -> None:
-        self.n = n
-        self.edges = [[] for _ in range(n)]
-        self.rev_edeges = [[] for _ in range(n)]
-        self.vs = []
-        self.order = [0] * n
-        self.used = [False] * n
-
-    def add_edge(self, from_v: int, to_v: int) -> None:
-        self.edges[from_v].append(to_v)
-        self.rev_edeges[to_v].append(from_v)
-
-    def dfs(self, v) -> None:
-        self.used[v] = True
-        for child in self.edges[v]:
-            if not self.used[child]:
-                self.dfs(child)
-        self.vs.append(v)
-
-    def rdfs(self, v, k) -> None:
-        self.used[v] = True
-        self.order[v] = k
-        for child in self.rev_edeges[v]:
-            if not self.used[child]:
-                self.rdfs(child, k)
-
-    def run(self) -> int:
-        self.used = [False] * self.n
-        self.vs.clear()
-        for v in range(self.n):
-            if not self.used[v]:
-                self.dfs(v)
-        self.used = [False] * self.n
-        k = 0
-        for v in reversed(self.vs):
-            if not self.used[v]:
-                self.rdfs(v, k)
-                k += 1
-        return k
-
+# sample for circular import
+def b():
+    from python_library.tmp_circular.a import a
+    pass
 ```
 {% endraw %}
 

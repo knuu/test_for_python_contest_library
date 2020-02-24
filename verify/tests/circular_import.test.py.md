@@ -21,17 +21,16 @@ layout: default
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-balloon-js@1.1.2/jquery.balloon.min.js" integrity="sha256-ZEYs9VrgAeNuPvs15E39OsyOJaIkXEEt10fzxJ20+2I=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../../../assets/js/copy-button.js"></script>
-<link rel="stylesheet" href="../../../assets/css/copy-button.css" />
+<script type="text/javascript" src="../../assets/js/copy-button.js"></script>
+<link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :warning: python_library_typed/geometry/geometry.py
+# :heavy_check_mark: tests/circular_import.test.py
 
-<a href="../../../index.html">Back to top page</a>
+<a href="../../index.html">Back to top page</a>
 
-* category: <a href="../../../index.html#8f04bd9e27216e5afe99d60f70335c05">python_library_typed/geometry</a>
-* <a href="{{ site.github.repository_url }}/blob/master/python_library_typed/geometry/geometry.py">View this file on GitHub</a>
-    - Last commit date: 2020-02-24 15:17:08+00:00
+* <a href="{{ site.github.repository_url }}/blob/master/tests/circular_import.test.py">View this file on GitHub</a>
+    - Last commit date: 2020-02-25 00:15:13+09:00
 
 
 
@@ -41,35 +40,18 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-eps = 1e-10
+# verify-helper: PROBLEM https://judge.yosupo.jp/problem/aplusb
+from python_library.tmp_circular.a import a
+from python_library.tmp_circular.b import b
 
 
-def add(a, b):
-    return 0 if abs(a + b) < eps * (abs(a) + abs(b)) else a + b
+def main() -> None:
+    A, B = map(int, input().split())
+    print(A + B)
 
 
-class Point:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-    def __add__(self, p):
-        return Point(add(self.x, p.x), add(self.y, p.y))
-
-    def __sub__(self, p):
-        return Point(add(self.x, -p.x), add(self.y, -p.y))
-
-    def __mul__(self, d):
-        return Point(self.x * d, self.y * d)
-
-    def dot(self, p):
-        return add(self.x * p.x, self.y * p.y)
-
-    def det(self, p):
-        return add(self.x * p.y, -self.y * p.x)
-
-    def __str__(self):
-        return "({}, {})".format(self.x, self.y)
+if __name__ == '__main__':
+    main()
 
 ```
 {% endraw %}
@@ -87,5 +69,5 @@ NotImplementedError
 ```
 {% endraw %}
 
-<a href="../../../index.html">Back to top page</a>
+<a href="../../index.html">Back to top page</a>
 

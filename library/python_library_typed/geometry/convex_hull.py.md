@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#8f04bd9e27216e5afe99d60f70335c05">python_library_typed/geometry</a>
 * <a href="{{ site.github.repository_url }}/blob/master/python_library_typed/geometry/convex_hull.py">View this file on GitHub</a>
-    - Last commit date: 2020-02-24 14:44:54+00:00
+    - Last commit date: 2020-02-24 15:17:08+00:00
 
 
 

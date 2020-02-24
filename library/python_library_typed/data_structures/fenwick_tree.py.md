@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#1bd6c8bcf0a034068d4ecd4538188ccf">python_library_typed/data_structures</a>
 * <a href="{{ site.github.repository_url }}/blob/master/python_library_typed/data_structures/fenwick_tree.py">View this file on GitHub</a>
-    - Last commit date: 2020-02-24 14:44:54+00:00
+    - Last commit date: 2020-02-24 15:17:08+00:00
 
 
 
