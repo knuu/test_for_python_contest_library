@@ -84,7 +84,7 @@ layout: default
 
 * :heavy_check_mark: <a href="library/python_library/data_structures/fenwick_tree.py.html">python_library/data_structures/fenwick_tree.py</a>
 * :heavy_check_mark: <a href="library/python_library/data_structures/matrix.py.html">python_library/data_structures/matrix.py</a>
-* :warning: <a href="library/python_library/data_structures/range_tree_2d.py.html">python_library/data_structures/range_tree_2d.py</a>
+* :heavy_check_mark: <a href="library/python_library/data_structures/range_tree_2d.py.html">python_library/data_structures/range_tree_2d.py</a>
 * :heavy_check_mark: <a href="library/python_library/data_structures/segment_tree.py.html">python_library/data_structures/segment_tree.py</a>
 * :heavy_check_mark: <a href="library/python_library/data_structures/unionfind.py.html">python_library/data_structures/unionfind.py</a>
 * :heavy_check_mark: <a href="library/python_library/data_structures/weighted_unionfind.py.html">python_library/data_structures/weighted_unionfind.py</a>

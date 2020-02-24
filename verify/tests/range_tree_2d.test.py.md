@@ -30,9 +30,14 @@ layout: default
 <a href="../../index.html">Back to top page</a>
 
 * <a href="{{ site.github.repository_url }}/blob/master/tests/range_tree_2d.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-02-16 06:11:47+09:00
+    - Last commit date: 2020-02-16 04:55:42+09:00
 
 
+
+
+## Depends on
+
+* :heavy_check_mark: <a href="../../library/python_library/data_structures/range_tree_2d.py.html">python_library/data_structures/range_tree_2d.py</a>
 
 
 ## Code
@@ -42,10 +47,7 @@ layout: default
 ```cpp
 # verify-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_C
 # verify-helper: IGNORE
-# @import python_library/data_structres/range_tree_2d.py
 import sys
-
-sys.path.insert(0, ".")
 input = sys.stdin.buffer.readline
 
 from python_library.data_structures.range_tree_2d import RangeTree2D
@@ -78,13 +80,9 @@ if __name__ == "__main__":
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/site-packages/onlinejudge_verify/docs.py", line 348, in write_contents
     bundled_code = language.bundle(self.file_class.file_path, basedir=self.cpp_source_path)
-  File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/other.py", line 48, in bundle
-    return subprocess.check_output(shlex.split(command))
-  File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/subprocess.py", line 411, in check_output
-    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
-  File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/subprocess.py", line 512, in run
-    raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['false']' returned non-zero exit status 1.
+  File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/python.py", line 68, in bundle
+    raise NotImplementedError
+NotImplementedError
 
 ```
 {% endraw %}

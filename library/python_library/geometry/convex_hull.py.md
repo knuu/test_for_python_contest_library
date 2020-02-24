@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#bb1189d107afaf50a8d799c22c656ecc">python_library/geometry</a>
 * <a href="{{ site.github.repository_url }}/blob/master/python_library/geometry/convex_hull.py">View this file on GitHub</a>
-    - Last commit date: 2020-02-16 07:49:55+09:00
+    - Last commit date: 2020-02-16 06:44:22+09:00
 
 
 
@@ -51,7 +51,6 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-# @import python_library/geometry/geometry.py
 from python_library.geometry.geometry import Point
 
 
@@ -86,13 +85,9 @@ class ConvexHull:
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/site-packages/onlinejudge_verify/docs.py", line 348, in write_contents
     bundled_code = language.bundle(self.file_class.file_path, basedir=self.cpp_source_path)
-  File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/other.py", line 48, in bundle
-    return subprocess.check_output(shlex.split(command))
-  File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/subprocess.py", line 411, in check_output
-    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
-  File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/subprocess.py", line 512, in run
-    raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['false']' returned non-zero exit status 1.
+  File "/opt/hostedtoolcache/Python/3.8.1/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/python.py", line 68, in bundle
+    raise NotImplementedError
+NotImplementedError
 
 ```
 {% endraw %}
